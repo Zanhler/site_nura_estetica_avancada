@@ -1,0 +1,11 @@
+# Materiais brutos usados durante a criação do site
+raw/
+
+# Arquivos locais do sistema e de editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Estado local da Vercel
+.vercel/
