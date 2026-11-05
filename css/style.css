@@ -418,3 +418,14 @@ em{font-style:italic;font-weight:300;color:var(--bronze)}
   .js-palavras .p{opacity:1}
   .js-desenha path,.js-desenha circle,.flor--quiz path,.flor--quiz circle{stroke-dashoffset:0}
 }
+
+/* quem cuida de você sem foto: texto centralizado numa coluna */
+.espec__in{grid-template-columns:1fr;max-width:680px}
+/* celular/tablet: na capa, a pill vem antes da imagem e o texto depois */
+@media (max-width:1020px){
+  .capa__in{gap:0}
+  .capa__texto{display:contents}
+  .capa__texto>.tag{order:0;justify-self:center;margin-bottom:22px}
+  .capa__foto{order:1;margin-bottom:40px}
+  .capa__texto>:not(.tag){order:2}
+}
